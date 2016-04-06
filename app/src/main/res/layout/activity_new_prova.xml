@@ -1,10 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="infsolution.com.br.infbullet.NewProvaActivity">
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prova_numero"
+        android:textSize="8pt"
+        />
+    <EditText
+        android:id="@+id/edt_nume_prova"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nume_prova"
+        android:textSize="8pt"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prova_nome"
+        android:textSize="8pt"
+        />
+    <EditText
+        android:id="@+id/edt_dt_prova"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_new_prova"
+        android:textSize="8pt"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prova_nota"
+        android:textSize="8pt"/>
+
+    <SeekBar
+        android:id="@+id/seek_nota_prova"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        />
+    <Spinner
+        android:id="@+id/spi_tipo_prova"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/tipo_prova" ></Spinner>
+
+    <Button
+        android:id="@+id/bt_new_prova"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_new_prova"
+        android:onClick="newProva"
+        />
+</LinearLayout>
+
