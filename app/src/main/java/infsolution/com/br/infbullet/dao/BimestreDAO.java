@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import infsolution.com.br.infbullet.modelo.Bimestre;
 
@@ -33,6 +35,21 @@ public class BimestreDAO {
         cv.put("situacao_bimestre", bimestre.getSituacaoBimestre());
         bulDao.getWritableDatabase().insert("bimestre", null, cv);
 
+    }
+    public List<Bimestre> lista() {
+        List<Bimestre> bimestres = new ArrayList<>();
+        String sql = "SELECT * FROM agenda;";
+        Cursor c = bulDao.getReadableDatabase().rawQuery(sql, null);
+        while (c.moveToNext()) {
+            int id=c.getInt(c.getColumnIndex("id_bimestre"));
+            String nome = c.getString(c.getColumnIndex("nome_bimestre"));
+            String situa = c.getString(c.getColumnIndex("situacao_bimestre"));
+            Bimestre ag = new Bimestre(nome);
+            ag.setIdBimestre(id);
+            ag.setSituacaoBimestre(situa);
+            bimestres.add(ag);
+        }
+        return bimestres;
     }
     public Bimestre getBimestre(){
         String sql ="SELECT * FROM bimestre;";
