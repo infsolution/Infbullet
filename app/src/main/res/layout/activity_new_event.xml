@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.infsolution.infbullet.NewEventActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_new_agenda"
+        android:textSize="6pt"
+        />
+    <EditText
+        android:id="@+id/edt_title_agenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_title_new_agenda"
+        android:textSize="6pt"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_data_new_agenda"
+        android:textSize="6pt"
+        />
+    <EditText
+        android:id="@+id/edt_data_agenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_data_new_agenda"
+        android:textSize="6pt"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_assunto_new_agenda"
+        android:textSize="6pt"
+        />
+    <EditText
+        android:id="@+id/edt_assunto_agenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_assunto_new_agenda"
+        android:textSize="6pt"/>
+    <Button
+        android:id="@+id/bt_cad_agenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_criar"
+        android:textSize="8pt"
+        android:onClick="newAgenda"
+        />
+</LinearLayout>
+

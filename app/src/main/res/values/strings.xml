@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Infbullet</string>
+    <string name="txt_new_agenda">Evento:</string>
+    <string name="hint_title_new_agenda">novo evento</string>
+    <string name="txt_data_new_agenda">Data:</string>
+    <string name="hint_data_new_agenda">dia do evento</string>
+    <string name="txt_assunto_new_agenda">Descrição</string>
+    <string name="hint_assunto_new_agenda">conteúdo do evento</string>
+    <string name="bt_criar">novo evento</string>
+    <string name="label_new_envent">Novo Evento</string>
+    <string name="label_events">Eventos agendados</string>
+    <string name="new_ev">Novo evento</string>
+    <string name="txt_nome_user">Nome</string>
+    <string name="hint_nome">seu nome</string>
+    <string name="txt_matricula">Matricula</string>
+    <string name="hint_matricula">sua matricula</string>
+    <string name="bt_cadastro">Novo aluno</string>
+    <string name="bt_atualizar">atualizar</string>
+    <string name="bt_delete">apagar</string>
+    <string name="hint_serie">sua serie</string>
+    <string name="txt_sesrie">Serie</string>
+    <string name="txt_meta">Meta</string>
+    <string name="hint_meta">sua meta pessoal</string>
+    <string name="txt_profile">Perfil</string>
+    <string name="txt_agenda">Agenda</string>
+    <string name="perfil">Perfil</string>
+    <string name="txt_titulo">Boletim</string>
+    <string name="prova">Provas</string>
+    <string name="title_activity_new_prova">NewProvaActivity</string>
+    <string name="new_prova">Nova prova</string>
+    <string name="prova_nome">Prova</string>
+    <string name="hint_new_prova">data da prova</string>
+    <string name="prova_numero">Número prova</string>
+    <string name="hint_nume_prova">numero da prova</string>
+    <string name="prova_nota">Nota</string>
+    <string name="hint_nota_prova">sua nota</string>
+    <string name="bt_new_prova">Nova prova</string>
+    <string-array name="tipo_prova">Tipo
+        <item>Nomal</item>
+        <item>Recuperação</item>
+        <item>Final</item>
+    </string-array>
+</resources>
+
