@@ -41,10 +41,10 @@ public class NewProvaActivity extends AppCompatActivity implements SeekBar.OnSee
         int nume = Integer.parseInt(numer.getText().toString());
         String data = dat.getText().toString();
         String tipo =spin.getSelectedItem().toString();
-        double nota = Double.parseDouble(not.getText().toString());
+        double nota = Double.valueOf(seek.getProgress());
         prova = new Prova(data);
         prova.setNumeroDaProva(nume);
-        prova.setNotaProva(seek.getProgress());
+        prova.setNotaProva(nota);
         prova.setTipo(tipo);
         proDao = new ProvaDAO(this);
         proDao.insert(prova);

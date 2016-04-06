@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import infsolution.com.br.infbullet.modelo.Boletim;
+
 public class BulletinActivity extends AppCompatActivity {
 
     @Override
@@ -22,6 +24,14 @@ public class BulletinActivity extends AppCompatActivity {
         startActivity(goToCad);
     }
     public void goForAgenda(View v){
+        Intent goToCad = new Intent(this,NewProvaActivity.class);
+        startActivity(goToCad);
+    }
+    public void goForBoletim(View v){
+        Intent goToCad = new Intent(this, BulletinActivity.class);
+        startActivity(goToCad);
+    }
+    public void goForProva(View v){
         Intent goToCad = new Intent(this,NewProvaActivity.class);
         startActivity(goToCad);
     }

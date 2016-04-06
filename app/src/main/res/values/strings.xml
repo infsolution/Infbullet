@@ -35,6 +35,12 @@
     <string name="prova_nota">Nota</string>
     <string name="hint_nota_prova">sua nota</string>
     <string name="bt_new_prova">Nova prova</string>
+    <string name="txt_materias">Materias</string>
+    <string name="bt_new_materia">Nova materia</string>
+    <string name="bt_bimestre">adcionar bimestre</string>
+    <string name="txt_nome_bime">Bimestre</string>
+    <string name="hint_new_bimestre">novo bimestre</string>
+    <string name="bt_cad_new_prova">Nova prova</string>
     <string-array name="tipo_prova">Tipo
         <item>Nomal</item>
         <item>Recuperação</item>
