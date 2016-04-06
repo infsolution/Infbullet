@@ -15,21 +15,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AgendaActivity" >
+        <activity android:name=".AgendaActivity" android:label="@string/agenda">
         </activity>
-        <activity android:name=".BimestreActivity" >
+        <activity android:name=".BimestreActivity" android:label="@string/bimestre">
         </activity>
-        <activity android:name=".MateriaActivity" >
+        <activity android:name=".MateriaActivity" android:label="@string/disciplinas">
         </activity>
-        <activity android:name=".NewEventActivity" >
+        <activity android:name=".NewEventActivity" android:label="@string/cad_evento">
         </activity>
-        <activity android:name=".NewMateriaActivity" >
+        <activity android:name=".NewMateriaActivity" android:label="@string/new_mat">
         </activity>
-        <activity android:name=".NewProvaActivity" >
+        <activity android:name=".NewProvaActivity" android:label="@string/new_prova">
         </activity>
-        <activity android:name=".ProfileActivity" >
+        <activity android:name=".ProfileActivity" android:label="@string/perfil">
         </activity>
-        <activity android:name=".ProvaActivity" >
+        <activity android:name=".ProvaActivity" android:label="@string/provas">
         </activity>
     </application>
 

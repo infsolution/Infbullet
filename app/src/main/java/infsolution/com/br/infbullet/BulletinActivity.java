@@ -9,6 +9,7 @@ import android.widget.TextView;
 import infsolution.com.br.infbullet.dao.AlunoDAO;
 import infsolution.com.br.infbullet.modelo.Aluno;
 import infsolution.com.br.infbullet.modelo.Boletim;
+import infsolution.com.br.infbullet.modelo.Disciplina;
 
 public class BulletinActivity extends AppCompatActivity {
     private TextView nomeAluno;
@@ -19,7 +20,10 @@ public class BulletinActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bulletin);
-        aluno=aluDao.getAluno();
+        nomeAluno =(TextView)findViewById(R.id.txt_nome_aluno);
+        media = (TextView)findViewById(R.id.txt_media);
+        aluDao = new AlunoDAO(this);
+        aluno = aluDao.getAluno();
         aluDao.close();
         if(aluno==null){
             nomeAluno =(TextView)findViewById(R.id.txt_nome_aluno);
@@ -38,7 +42,7 @@ public class BulletinActivity extends AppCompatActivity {
         startActivity(goToCad);
     }
     public void goForAgenda(View v){
-        Intent goToCad = new Intent(this,NewProvaActivity.class);
+        Intent goToCad = new Intent(this,AgendaActivity.class);
         startActivity(goToCad);
     }
     public void goForBoletim(View v){
@@ -50,7 +54,7 @@ public class BulletinActivity extends AppCompatActivity {
         startActivity(goToCad);
     }
     public void goForMateria(View v){
-        Intent goToCad = new Intent(this,NewProvaActivity.class);
+        Intent goToCad = new Intent(this, MateriaActivity.class);
         startActivity(goToCad);
     }
 }

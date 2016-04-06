@@ -41,6 +41,15 @@
     <string name="txt_nome_bime">Bimestre</string>
     <string name="hint_new_bimestre">novo bimestre</string>
     <string name="bt_cad_new_prova">Nova prova</string>
+    <string name="agenda">Agenda</string>
+    <string name="bimestre">Bimestre</string>
+    <string name="disciplinas">Disciplinas</string>
+    <string name="cad_evento">Novo evento</string>
+    <string name="new_mat">Nova disciplina</string>
+    <string name="provas">Provas</string>
+    <string name="no_aluno">Aluno não cadastrado</string>
+    <string name="media_aluno">0.0</string>
+    <string name="media_aluno_desc">Media:</string>
     <string-array name="tipo_prova">Tipo
         <item>Nomal</item>
         <item>Recuperação</item>

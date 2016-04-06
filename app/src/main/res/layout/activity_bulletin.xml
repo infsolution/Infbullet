@@ -15,6 +15,33 @@
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_nome_aluno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_aluno"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/media_aluno_desc"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            />
+        <TextView
+            android:id="@+id/txt_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/media_aluno"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            />
+    </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -44,23 +71,25 @@
                 android:layout_toRightOf="@+id/go_profile"
                 android:onClick="goForAgenda"
                 />
-            <TextView
-                android:id="@+id/txt_go_profile"
+            <ImageButton
+                android:id="@+id/go_maateria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/go_profile"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:text="@string/txt_profile"/>
-            <TextView
-                android:id="@+id/txt_go_agenda"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/go_agenda"
-                android:layout_toRightOf="@+id/txt_go_profile"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:text="@string/txt_agenda"
+                android:src="@drawable/materias"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@+id/go_agenda"
+                android:onClick="goForMateria"
                 />
+            <ImageButton
+                android:id="@+id/go_boletim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/horario"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_below="@+id/go_profile"
+                android:onClick="goForProva"
+                />
+
 
 
         </RelativeLayout>
